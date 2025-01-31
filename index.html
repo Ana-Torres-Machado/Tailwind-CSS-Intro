@@ -1,0 +1,29 @@
+<!--According to the official Tailwind site, Tailwind is modernized tool that uses the latest CSS to make the experience more enjoyable for 
+developers. However, it still has quite a few differences from another tool called Bootstrap. Both can modify the CSS of a site, but
+Boostrap utilizes SASS, has JS components, has A LOT of mandatory imports if you plan to use it and it looks too advanced for those who are
+just starting their coding and website development journey. Tailwind, on the other hand, is easier to comprehend, doesn't need too many
+additional imports, and is a shortcutted version of CSS, and while I don't believe it uses SASS, it still has a lot of properties for us
+to use with the concept of utility classes. Utility classes are the CSS properties that we can write inside the class property of a tag or
+element, and unlike traditional CSS, it uses a shorter abbreviattion of these different styles which makes it less time consuming and more
+convenient for developers to use.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Tailwind CSS Introduction & Challenge Assignment</title>
+</head>
+<body>
+    <div class="container sm:25% lg:50% flex justify-center align-center bg-emerald-600 rounded-xl">
+        <br>
+        <p class="font-bold">Name: Dee Bradley Baker</p>
+        <p class="font-bold">Title: Voice Actor</p>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa6M-LO6i6eSO9kMfeqwkz2Y24S7Ep6Yb9w0IUKkvgerw-iJXKtIDBP4GVMxkTVO7XrrsgQEzg7ijsuqY69SXDag" alt="Dee Bradley Baker" class="rounded-full">
+        <br>
+        <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! Debitis placeat error, velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
+        <button class="bg-blue-500 hover:bg-blue-800 hover:text-white">Performances and Characters</button>
+    </div>
+</body>
+</html>
