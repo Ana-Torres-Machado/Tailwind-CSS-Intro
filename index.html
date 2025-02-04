@@ -20,94 +20,76 @@ convenient for developers to use.-->
     <title>Tailwind CSS Introduction & Challenge Assignment</title>
     <link ref="stylesheet" href="">
 </head>
-<body class="grid-cols-3">
-    <div class="container sm:25% lg:50% flex justify-center align-center bg-emerald-600 rounded-xl hover:shadow-lg col-1">
+<body>
+<div class="flex gap-10">
+    <div class="container sm:25% lg:50% justify-center align-center bg-indigo-600 rounded-xl hover:bg-indigo-800 hover:text-gray-300 flex-1">
         <br>
         <p class="font-bold">Name: Dee Bradley Baker</p>
-        <p class="font-bold">Title: Voice Actor</p>
-        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa6M-LO6i6eSO9kMfeqwkz2Y24S7Ep6Yb9w0IUKkvgerw-iJXKtIDBP4GVMxkTVO7XrrsgQEzg7ijsuqY69SXDag" alt="Dee Bradley Baker" class="rounded-full">
+        <p class="font-bold">Title: American Voice Actor</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBe7jagTUoOXxmCavO0GSLKV4fHgt8d-DtsQ&s" alt="Dee Bradley Baker" class="rounded-full">
         <br>
         <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, 
         omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, 
         reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! 
         Debitis placeat error,velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
-        <button class="bg-blue-500 hover:bg-blue-800 hover:text-white" onclick="Baker()">Performances and Characters</button>
-        <button class="bg-purple-500 hover:bg-purple-800 hover:text-white" onclick="Baker()">Close</button>
-        
-        <!--Make the text appear once the button is pressed-->
-        <script>
-            
-            function Baker(){
-                document.getElementById("dee-cast").innerHTML =
-        <div id="dee-cast">
-            <p>
-                <ul>
-                    <li><em>Phineas and Ferb:</em> Perry the Platypus</li>
-                    <li><em>Adventure Time:</em> Cinnamon Bun</li>
-                    <li><em>"The Clone Wars" 2008 movie, "The Clone Wars" TV Show, "The Bad Batch", "Star Wars:Young Jedi Adventures":</em> Clone Soldiers and more</li>
-                    <li><em>Avatar and The Last Airbender:</em> Appa</li>
-                </ul>
-            </p>
-        </div>
-        }
-        </script>
-    </div>
-    <div class="container sm:25% lg:50% flex justify-center align-center bg-emerald-600 rounded-xl hover:shadow-lg col-2">
+        <p> Performances and Characters:
+            <ul>
+                <li><em>"Phineas and Ferb":</em> Perry the Platypus</li>
+                <li><em>"Adventure Time":</em> Cinnamon Bun</li>
+                <li><em>"The Clone Wars" 2008 movie, "The Clone Wars" TV Show, "The Bad Batch", "Star Wars:Young Jedi Adventures":</em> Clone Troopers and more</li>
+                <li><em>"Gravity Falls":</em> Waddles</li>
+                <li><em>"Spongebob Squarepants":</em> Squlliams Fancyson</li>
+                <li><em>"The Kids Next Door":</em> Wallabee Beetles</li>
+                <li><em>"The Grim Adventures of Billy and Mandy":</em> Mandy's Dad</li>
+            </ul>
+        </p>
         <br>
-        <p class="font-bold">Name: Hayden Christensen</p>
-        <p class="font-bold">Title: Actor</p>
-        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa6M-LO6i6eSO9kMfeqwkz2Y24S7Ep6Yb9w0IUKkvgerw-iJXKtIDBP4GVMxkTVO7XrrsgQEzg7ijsuqY69SXDag" alt="Dee Bradley Baker" class="rounded-full">
         <br>
-        <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, 
-        omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, 
-        reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! 
-        Debitis placeat error,velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
-        <button class="bg-blue-500 hover:bg-blue-800 hover:text-white" onclick="Christensen()">Performances and Characters</button>
-        
-        <script>
-            function Christensen(){
-                document.getElementById("hayden-cast").innerHTML =
-        <div id="hayden-cast">
-            <p>
-                <ul>
-                    <li><em>"Attack of the Clones", "Return of the Jedi", "Ahsoka", "Obi-Wan Kenobi":</em> Anakin Skywalker</li>
-                    <li><em>Adventure Time:</em> Cinnamon Bun</li>
-                    <li><em>"The Clone Wars" 2008 movie, "The Clone Wars" TV Show, "The Bad Batch", "Star Wars:Young Jedi Adventures":</em> Clone Soldiers and more</li>
-                    <li><em>Avatar and The Last Airbender:</em> Appa</li>
-                </ul>
-            </p>
-        </div>
-            }
-        </script>
     </div>
-    <div class="container sm:25% lg:50% flex justify-center align-center bg-emerald-600 rounded-xl hover:shadow-lg col-3">
+    <div class="container sm:25% lg:50% justify-center align-center bg-yellow-600 rounded-xl hover:bg-yellow-800 hover:text-gray-100 flex-1">
         <br>
         <p class="font-bold">Name: Anthony Daniels</p>
-        <p class="font-bold">Title: Actor</p>
-        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa6M-LO6i6eSO9kMfeqwkz2Y24S7Ep6Yb9w0IUKkvgerw-iJXKtIDBP4GVMxkTVO7XrrsgQEzg7ijsuqY69SXDag" alt="Dee Bradley Baker" class="rounded-full">
+        <p class="font-bold">Title: British Actor and Mime Artist</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMFPNd0MeiydytYT-aDDtm0UtDIgEmRXakw&s" alt="Anthony Daniels" class="rounded-full">
         <br>
         <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, 
         omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, 
         reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! 
         Debitis placeat error,velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
-        <button class="bg-blue-500 hover:bg-blue-800 hover:text-white" onclick="Daniels()">Performances and Characters</button>
-        
-        <script>
-            function Daniels(){
-                document.getElementById("anthony-cast").innerHTML =
-        <div id="anthony-cast">
-            <p>
-                <ul>
-                    <li><em>"Attack of the Clones", "Return of the Jedi", "A New Hope", "The Empire Strikes Back":</em> C-3PO</li>
-                </ul>
-            </p>
-        </div>
-            }
-        </script>
+        <p> Performances and Characters:
+            <ul>
+                <li><em>"Attack of the Clones", "Return of the Jedi", "A New Hope", "The Empire Strikes Back", "Star Wars Holiday Special", "The clone Wars" 2003 animation, "The Clone Wars" 2008 movie, "The Clone Wars" TV Show, "Star Wars: Rebels":</em> C-3PO</li>
+            </ul>
+        </p>
+        <br>
+        <br>
     </div>
+    <div class="container sm:25% lg:50% justify-center align-center bg-gray-500 rounded-xl hover:bg-gray-700 hover:text-gray-300 flex-1">
+        <br>
+        <p class="font-bold">Name: James Earl Jones</p>
+        <p class="font-bold">Title: American Actor</p>
+        <img src="https://assets.playbill.com/head-shots/5746cad484bb5195af625229b8c2ee8a-James-Earl-Jones_1413908835.jpg" alt="James Earl Jones" class="rounded-full">
+        <br>
+        <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, 
+        omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, 
+        reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! 
+        Debitis placeat error,velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
+        <p> Performances and Characters:
+            <ul>
+                <li><em>"The Sandlot" and "Sandlot 2":</em> Mr. Mertle</li>
+                <li><em>"Robots":</em> The Voice Box in the Hardware Store</li>
+                <li><em>"Star wars Episode III: Revenge of the Sith", "Star Wars Episode IV: A New Hope, "Star Wars Episode V: The Empire Strikes Back", "Star Wars Episode VI: The Return of the Jedi", "Star Wars Holiday Special", "Rogue One: A Star Wars Story":</em> Darth Vader</li>
+                <li><em>"Coming to America":</em> King Jaffer Joffer</li>
+                <li><em>"The Lion King" (both animated and live action), "The Lion King 2: Simba's Pride", "The Lion Guard: The return of the Roar":</em> Mufasa</li>
+            </ul>
+        </p>
+        <br>
+        <br>
+    </div>
+</div>
     <div>
         <i></i>Home
         <i></i>About
