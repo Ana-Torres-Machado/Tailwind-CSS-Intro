@@ -1,3 +1,5 @@
+<!--Part 1: Research and Setup-->
+
 <!--According to the official Tailwind site, Tailwind is modernized tool that uses the latest CSS to make the experience more enjoyable for 
 developers. However, it still has quite a few differences from another tool called Bootstrap. Both can modify the CSS of a site, but
 Boostrap utilizes SASS, has JS components, has A LOT of mandatory imports if you plan to use it and it looks too advanced for those who are
@@ -7,6 +9,8 @@ to use with the concept of utility classes. Utility classes are the CSS properti
 element, and unlike traditional CSS, it uses a shorter abbreviattion of these different styles which makes it less time consuming and more
 convenient for developers to use.-->
 
+<!--Parts 2-4: Profile Card Challenge, Responsive Grid Challenge-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,16 +18,100 @@ convenient for developers to use.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Tailwind CSS Introduction & Challenge Assignment</title>
+    <link ref="stylesheet" href="">
 </head>
-<body>
-    <div class="container sm:25% lg:50% flex justify-center align-center bg-emerald-600 rounded-xl">
+<body class="grid-cols-3">
+    <div class="container sm:25% lg:50% flex justify-center align-center bg-emerald-600 rounded-xl hover:shadow-lg col-1">
         <br>
         <p class="font-bold">Name: Dee Bradley Baker</p>
         <p class="font-bold">Title: Voice Actor</p>
         <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa6M-LO6i6eSO9kMfeqwkz2Y24S7Ep6Yb9w0IUKkvgerw-iJXKtIDBP4GVMxkTVO7XrrsgQEzg7ijsuqY69SXDag" alt="Dee Bradley Baker" class="rounded-full">
         <br>
-        <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! Debitis placeat error, velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
-        <button class="bg-blue-500 hover:bg-blue-800 hover:text-white">Performances and Characters</button>
+        <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, 
+        omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, 
+        reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! 
+        Debitis placeat error,velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
+        <button class="bg-blue-500 hover:bg-blue-800 hover:text-white" onclick="Baker()">Performances and Characters</button>
+        <button class="bg-purple-500 hover:bg-purple-800 hover:text-white" onclick="Baker()">Close</button>
+        
+        <!--Make the text appear once the button is pressed-->
+        <script>
+            
+            function Baker(){
+                document.getElementById("dee-cast").innerHTML =
+        <div id="dee-cast">
+            <p>
+                <ul>
+                    <li><em>Phineas and Ferb:</em> Perry the Platypus</li>
+                    <li><em>Adventure Time:</em> Cinnamon Bun</li>
+                    <li><em>"The Clone Wars" 2008 movie, "The Clone Wars" TV Show, "The Bad Batch", "Star Wars:Young Jedi Adventures":</em> Clone Soldiers and more</li>
+                    <li><em>Avatar and The Last Airbender:</em> Appa</li>
+                </ul>
+            </p>
+        </div>
+        }
+        </script>
+    </div>
+    <div class="container sm:25% lg:50% flex justify-center align-center bg-emerald-600 rounded-xl hover:shadow-lg col-2">
+        <br>
+        <p class="font-bold">Name: Hayden Christensen</p>
+        <p class="font-bold">Title: Actor</p>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa6M-LO6i6eSO9kMfeqwkz2Y24S7Ep6Yb9w0IUKkvgerw-iJXKtIDBP4GVMxkTVO7XrrsgQEzg7ijsuqY69SXDag" alt="Dee Bradley Baker" class="rounded-full">
+        <br>
+        <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, 
+        omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, 
+        reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! 
+        Debitis placeat error,velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
+        <button class="bg-blue-500 hover:bg-blue-800 hover:text-white" onclick="Christensen()">Performances and Characters</button>
+        
+        <script>
+            function Christensen(){
+                document.getElementById("hayden-cast").innerHTML =
+        <div id="hayden-cast">
+            <p>
+                <ul>
+                    <li><em>"Attack of the Clones", "Return of the Jedi", "Ahsoka", "Obi-Wan Kenobi":</em> Anakin Skywalker</li>
+                    <li><em>Adventure Time:</em> Cinnamon Bun</li>
+                    <li><em>"The Clone Wars" 2008 movie, "The Clone Wars" TV Show, "The Bad Batch", "Star Wars:Young Jedi Adventures":</em> Clone Soldiers and more</li>
+                    <li><em>Avatar and The Last Airbender:</em> Appa</li>
+                </ul>
+            </p>
+        </div>
+            }
+        </script>
+    </div>
+    <div class="container sm:25% lg:50% flex justify-center align-center bg-emerald-600 rounded-xl hover:shadow-lg col-3">
+        <br>
+        <p class="font-bold">Name: Anthony Daniels</p>
+        <p class="font-bold">Title: Actor</p>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa6M-LO6i6eSO9kMfeqwkz2Y24S7Ep6Yb9w0IUKkvgerw-iJXKtIDBP4GVMxkTVO7XrrsgQEzg7ijsuqY69SXDag" alt="Dee Bradley Baker" class="rounded-full">
+        <br>
+        <p class="text-sm float-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Nobis accusantium, dolorum, modi voluptatem atque numquam incidunt eum dignissimos a optio, 
+        omnis aperiam exercitationem unde vel iure suscipit vitae magni fugit assumenda! Tempora soluta, 
+        reprehenderit culpa officia quos sed cum nemo quasi voluptates ratione voluptatem voluptatibus at omnis qui magni quo quaerat adipisci nostrum! 
+        Debitis placeat error,velit at dicta incidunt dolore totam, consequatur quasi, explicabo eos perspiciatis!</p>
+        <button class="bg-blue-500 hover:bg-blue-800 hover:text-white" onclick="Daniels()">Performances and Characters</button>
+        
+        <script>
+            function Daniels(){
+                document.getElementById("anthony-cast").innerHTML =
+        <div id="anthony-cast">
+            <p>
+                <ul>
+                    <li><em>"Attack of the Clones", "Return of the Jedi", "A New Hope", "The Empire Strikes Back":</em> C-3PO</li>
+                </ul>
+            </p>
+        </div>
+            }
+        </script>
+    </div>
+    <div>
+        <i></i>Home
+        <i></i>About
+        <i></i>GitHub
     </div>
 </body>
 </html>
